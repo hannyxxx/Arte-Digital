@@ -208,9 +208,21 @@ background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
 
     .maincontacto{
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: "h1 h1 h1" "info info info" "h3 h3 h3" "dato dato dato" "mensa mensa mensa" "opcion opcion opcion" "opcicolo opcicolo opcicolo" "ul ul ul" "volver volver volver" "footer footer footer";
+      grid-template-areas: "h1 h1 h1"
+                           "info info info" 
+                           "h3 h3 h3"
+                           "dato dato dato"
+                           "mensa mensa mensa"
+                           "opcion opcion opcion" 
+                           "opcicolo opcicolo opcicolo"
+                           "ul ul ul"
+                           "volver volver volver"
+                          "footer footer footer";
+    /*grid-template-rows: 80px 1fr 40px 40px 40px 40px 40px 50px 80px 150px
+      ;*/
+      grid-template-columns: repeat(3, 1fr);
     }
+
 
     .h1contacto{
       grid-area: h1;
@@ -254,10 +266,12 @@ background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
       grid-area: volver;
       display: flex;
       justify-content: center;
+      
     }
 
     .footercontacto{
       grid-area: footer;
+      
     }
 
     .footercontacto li{
@@ -526,115 +540,93 @@ footer {
 }
 
 /* responsive index*/
-@media screen and (max-width: 768px) {
-  header {
-    display: flex;
-    flex-direction: column;
-  }
-  header nav {
-    display: flex;
-    justify-content: center;
-  }
-  header nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+@media only screen and (min-width:375px) and (max-width:767px) {
+  
+.bodyindex{
+  grid-template-areas: "header header header"
+                       "main main main" 
+                       "footer footer footer";
+  grid-template-rows: 650px 3fr 100px;
+  grid-template-columns:3, 1fr ;
+}  
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-@media screen and (max-width: 400px){
+.tituloo{
+  font-size: 60px;
+}
 
-  header {
-    display: flex;
-    flex-direction: column;
-  }
-  header nav {
-    display: flex;
-    justify-content: center;
-  }
-  header nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
 .videoindex{
-  width: 100px;
-  max-width: 400px;
+  width: 50%;
+  margin: 0 ;
+  background-size: 100% 100%;
   
 }
 
 }
 
-@media screen and (max-width: 1200px){
 
-header{
-  display: flex;
-  flex-direction: row;
-}
-header nav {
-  display: flex;
-  justify-content: center;
-}
-header nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+@media only screen and (min-width:768px) and (max-width:1023px) {
+  .bodyindex{
+    grid-template-areas: "header header header"
+                         "main main main" 
+                         "footer footer footer";
+    grid-template-rows: 100px 3fr 100px;
+    grid-template-columns:3, 1fr ;
+  }  
 
 }
 
-/*responsive diseño*/
+/*responsive para contacto*/
+@media only screen and (min-width:375px) and (max-width:767px){
 
-@media screen and (max-width:400px){
+  .maincontacto{
+  display: grid;
+  grid-template-areas: "h1 h1 h1"
+                       "info info info" 
+                       "h3 h3 h3"
+                       "dato dato dato"
+                       "mensa mensa mensa"
+                       "opcion opcion opcion" 
+                       "opcicolo opcicolo opcicolo"
+                       "ul ul ul"
+                       "volver volver volver"
+                      "footer footer footer";
+  grid-template-columns: repeat(3, 1fr);   
 
-  header {
+
+                    }
+
+  .headercontacto{
     display: flex;
     flex-direction: column;
-  }
-  header nav {
-    display: flex;
     justify-content: center;
-  }
-  header nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+   
   }
 
 }
 
-@media screen and (max-width: 768px){
+@media only screen and (min-width:768px) and (max-width:1023px) {
 
-  header {
-    display: flex;
-    flex-direction: row;
-  }
-  header nav {
-    display: flex;
-    justify-content: center;
-  }
-  header nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-}
-
-@media screen and (max-width: 1200px){
-
-  header{
-    display: flex;
-    flex-direction: row;
-  }
-  header nav {
-    display: flex;
-    justify-content: center;
-  }
-  header nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
+  .maincontacto{
+    display: grid;
+    grid-template-areas: "h1 h1 h1"
+                         "info info info" 
+                         "h3 h3 h3"
+                         "dato dato dato"
+                         "mensa mensa mensa"
+                         "opcion opcion opcion" 
+                         "opcicolo opcicolo opcicolo"
+                         "ul ul ul"
+                         "volver volver volver"
+                        "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);   
+  
+  
+                      }
 
 }
