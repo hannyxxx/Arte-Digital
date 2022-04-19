@@ -4,12 +4,33 @@ h1{
     text-align: center;
 }
 
+.nav-item{
+  font-weight: bold;
+  font-size: 30px;
+  
+  
+  
+}
+ 
+
+.nav-item a{
+  color: rgb(8, 8, 8);
+  font-weight: bold;
+  
+}
+
+
+body{ 
+  font-family: 'Bebas Neue', cursive;
+  background-color: rgb(7, 7, 7);}
+
 .oro{
     color: rgb(250, 246, 246);
     text-align: center;
     font-size: 150%;
 }
 
+/*
 .fondoinicio{
     background-color: rgb(255, 255, 255);
     background-image: url(https://i.pinimg.com/564x/b8/94/94/b894940192b8cbdf25a76ee40cb7f763.jpg);
@@ -20,9 +41,9 @@ h1{
     list-style-type: none;
     text-decoration: none;
     display: inline-block;
-    line-height: 3.0;
+    line-height: 1.0;
     margin: 10px;
-    padding: 7px;
+    padding: 10px;
 }
 
 .inicio li a{
@@ -31,18 +52,18 @@ h1{
     font-family: 'Bebas Neue', cursive;
     
     
-    
 }
 
 .inicio li a:hover{
     background-color:rgb(6, 5, 99);
-}
+}*/
 
 .tituloo{
     font-family: 'Bebas Neue', cursive;
     font-weight: bold;
     font-size: 500%; 
-    border:  solid 5px rgb(243, 235, 235);
+    border: solid 5px white;
+    
 }
 .titulo2{
     text-align: center;
@@ -92,6 +113,83 @@ h1{
     
 }
 
+.btn-neon{
+  position: relative;
+  display: inline-block;
+  padding: 5px, 10px;
+  color: rgb(54, 241, 47);
+  letter-spacing: 3px;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  overflow: hidden;
+transition: 0.2s;
+}
+
+.btn-neon:hover{
+  background: chartreuse;
+  box-shadow: 0 0 5px chartreuse, 0 0 1px chartreuse,
+  0 0 20px chartreuse;
+  transition-delay: 0.2s;
+}
+
+.btn-neon span{
+  position: absolute;
+  display: block;
+}
+#span1{
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,chartreuse); 
+}
+
+.btn-neon:hover #span1{
+  left: 100%;
+  transition: 1s;
+}
+#span3{
+  bottom: 0;
+  right:  -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg,transparent,chartreuse); 
+}
+
+.btn-neon:hover #span3{
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+#span2{
+  top: -100;
+  right:  0%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,chartreuse); 
+}
+
+.btn-neon:hover #span2{
+  top:  100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+#span4{
+  bottom: -100%;
+  left: 0%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,chartreuse); 
+}
+
+.btn-neon:hover #span4{
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+/*
 .volverinicio{
     text-align: center;
     list-style-type: none;
@@ -102,21 +200,19 @@ h1{
     
     background: rgb(131,58,180);
 background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-}
+}*/
 
 .videoindex{
     text-align: center;
 }
-.videoiframeindex{
-    text-align: center;
-}
+
 
 /* HTML QUIENES SOMOS*/
 
 .mainsomos{
-  display: grid;
+ display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: "h1 h1 h1" "p p p" "img img img" "volver volver volver" "footer footer footer";
+        grid-template-areas: "h1 h1 h1" "p p p" "img img img" "btn btn btn" "footer footer footer";
 }
 
 .h1somos{
@@ -131,8 +227,8 @@ background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
   grid-area: img;
 }
 
-.volversomos{
-  grid-area: volver;
+.btn-neon{
+  grid-area: btn;
 }
 
 .footersomos{
@@ -152,7 +248,7 @@ background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
         background-image: url(https://i.pinimg.com/564x/b8/94/94/b894940192b8cbdf25a76ee40cb7f763.jpg);
         background-position:20%;
     }
-    .iniciosomos li{
+    /*.iniciosomos li{
         font-size: xx-large;
         list-style-type: none;
         text-decoration: none;
@@ -173,7 +269,7 @@ background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
     
     .iniciosomos li a:hover{
         background-color:rgb(6, 5, 99);
-    } 
+    }*/
 
     .parrafosomos{
         color: rgb(243, 235, 235);
@@ -190,7 +286,7 @@ text-align: center;
     margin:auto
   }
 
-  .volveriniciosomos{
+  /*.volveriniciosomos{
     text-align: center;
     list-style-type: none;
   }
@@ -198,9 +294,17 @@ text-align: center;
     
     background: rgb(131,58,180);
 background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-  }
+  }*/
   .imagensomos{
       text-align: center;
+  }
+ .h1somos{
+   border: 2px solid rgb(15, 15, 15);
+   box-shadow: inset 0 0 5px rgb(11, 233, 11), 0 0 10px rgb(48, 224, 48) ;
+ margin: auto;
+ max-width: 300px;
+ text-align: center;
+ padding: 10px;
   }
 
 
@@ -216,7 +320,7 @@ background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
                            "opcion opcion opcion" 
                            "opcicolo opcicolo opcicolo"
                            "ul ul ul"
-                           "volver volver volver"
+                           "btn btn btn"
                           "footer footer footer";
     /*grid-template-rows: 80px 1fr 40px 40px 40px 40px 40px 50px 80px 150px
       ;*/
@@ -262,10 +366,9 @@ background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
       grid-area: ul;
     }
 
-    .volvercontacto{
-      grid-area: volver;
-      display: flex;
-      justify-content: center;
+    .btn-neon{
+      grid-area: btn;
+      
       
     }
 
@@ -301,7 +404,7 @@ background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
 .titulocontacto{
     font-size: 250%;
 }
-
+/*
 .volveriniciocontacto{
     text-align: center;
     list-style-type: none;
@@ -310,7 +413,7 @@ background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
     
     background: rgb(131,58,180);
 background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-  }
+  }*/
 
   .opcioncolor{
       color:rgb(248, 241, 241) ;
@@ -321,7 +424,7 @@ background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
   .maindiseño {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "h1d h1d h1d" "dise1 dise2 dise3" "dise4 dise5 dise6" ". dise7 ." "volver volver volver";
+    grid-template-areas: "h1d h1d h1d" "dise1 dise2 dise3" "dise4 dise5 dise6" ". dise7 ." "btn btn btn";
   }
 
   .h1diseño {
@@ -357,10 +460,10 @@ background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
     grid-area: dise7;
   }
 
-  .volverdiseño {
-    grid-area: volver;
+  .btn-neon {
+    grid-area: btn;
   }
-  
+ /* 
   .volveriniciodiseño{
         text-align: center;
         list-style-type: none;
@@ -369,7 +472,7 @@ background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
         
         background: rgb(131,58,180);
         background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-      }
+      }*/
       
       .dise1{
         width: 100%;
@@ -416,7 +519,7 @@ background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
       .mainpromociones{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: "h1 h1 h1" "torna mundi davi" "precio1 precio2 precio3" "volver volver volver" "footer footer footer";
+        grid-template-areas: "h1 h1 h1" "torna mundi davi" "precio1 precio2 precio3" "btn btn btn" "footer footer footer";
         
       }
 
@@ -443,8 +546,8 @@ background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
         justify-content: center;
       }
 
-      .volverpromo{
-        grid-area: volver;
+      .btn-neon{
+        grid-area: btn;
       }
 
       .footerpromociones{
@@ -461,7 +564,7 @@ background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
         text-align: center;
         background-image: url(https://i.pinimg.com/564x/78/06/3d/78063d629b2cc402458e60b6df335004.jpg);}
         
-        
+        /*
         .volveriniciopromo{
             text-align: center;
             list-style-type: none;
@@ -470,7 +573,7 @@ background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
             
             background: rgb(131,58,180);
         background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-          }
+          }*/
 
           .precio1{
             font-weight: bold;
@@ -514,9 +617,9 @@ background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
           }
         
           /*grid y flex index*/
-body{ 
-    font-family: 'Bebas Neue', cursive;
-    background-color: rgb(7, 7, 7);
+/*body{ 
+  font-family: 'Bebas Neue', cursive;
+  background-color: rgb(7, 7, 7);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "header header" "main main" "footer footer";
@@ -539,7 +642,7 @@ main {
 
 footer {
   grid-area: footer;
-}
+}*/
 
 /* responsive index*/
 @media only screen and (min-width:375px) and (max-width:767px) {
@@ -552,19 +655,22 @@ footer {
   grid-template-columns:3, 1fr ;
 }  
 
-header nav ul {
+
+.tituloo{
+  font-size: 60px;
+  
+}
+
+.tipos1{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.tituloo{
-  font-size: 60px;
-}
-
 .videoindex{
   width: 50px;
-  
+  display: flex;
+  justify-content: center;
   
 }
 
@@ -580,54 +686,148 @@ header nav ul {
     grid-template-columns:3, 1fr ;
   }  
 
+.tituloo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tipos1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+}
+
+@media only screen and (min-width:1023px) and (max-width:1200px){
+  .tituloo{
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
 /*responsive para contacto*/
 @media only screen and (min-width:375px) and (max-width:767px){
 
-  .maincontacto{
-  display: grid;
-  grid-template-areas: "h1 h1 h1"
-                       "info info info" 
-                       "h3 h3 h3"
-                       "dato dato dato"
-                       "mensa mensa mensa"
-                       "opcion opcion opcion" 
-                       "opcicolo opcicolo opcicolo"
-                       "ul ul ul"
-                       "volver volver volver"
-                      "footer footer footer";
-  grid-template-columns: repeat(3, 1fr);   
 
-
+                    .titulocontacto{
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
                     }
-
-  .headercontacto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-   
-  }
 
 }
 
 @media only screen and (min-width:768px) and (max-width:1023px) {
 
-  .maincontacto{
-    display: grid;
-    grid-template-areas: "h1 h1 h1"
-                         "info info info" 
-                         "h3 h3 h3"
-                         "dato dato dato"
-                         "mensa mensa mensa"
-                         "opcion opcion opcion" 
-                         "opcicolo opcicolo opcicolo"
-                         "ul ul ul"
-                         "volver volver volver"
-                        "footer footer footer";
-    grid-template-columns: repeat(3, 1fr);   
   
-  
-                      }
+
+                      .titulocontacto{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                      } 
+
+}
+
+
+@media only screen and (min-width:1023px) and (max-width:1200px){
+  .titulocontacto{
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+/*responsive quienes somos*/
+@media only screen and (min-width:375px) and (max-width:767px){
+  .titulosomos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px){
+ 
+  .imagensomos{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .h1somos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width:1023px) and (max-width:1200px){
+  .h1somos{
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+/*responsive promociones*/
+@media only screen and (min-width:375px) and (max-width:767px){
+
+  .h1promociones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px){
+  .h1promociones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}
+
+@media only screen and (min-width:1023px) and (max-width:1200px){
+  .h1promociones{
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+/*responsive diseños*/
+@media only screen and (min-width:375px) and (max-width:767px){
+  .h1diseño{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px){
+  .h1diseño{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}
+
+@media only screen and (min-width:1023px) and (max-width:1200px){
+
+  .h1diseño{
+    display: flex;
+    justify-content: center;
+  }
 
 }
