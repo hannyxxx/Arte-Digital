@@ -1,0 +1,121 @@
+h1 {
+  color: #fafafa;
+  text-align: center; }
+
+.nav-item {
+  font-weight: bold;
+  font-size: 30px; }
+  .nav-item a {
+    color: #080808;
+    font-weight: bold; }
+
+body {
+  font-family: "Bebas Neue", cursive;
+  background-color: #070707; }
+
+.tituloo {
+  font-family: 'Bebas Neue', cursive;
+  font-weight: bold;
+  font-size: 500%;
+  border: solid 5px white; }
+
+.titulo2 {
+  text-align: center;
+  color: #f3efef;
+  font-size: 250%;
+  font-family: 'Bebas Neue', cursive; }
+
+.parrafo1 {
+  text-align: center;
+  font-size: 150%;
+  color: #f5eded; }
+
+.tipos {
+  color: #f3ebeb;
+  font-size: 250%;
+  text-align: center; }
+
+.tipos1 li {
+  color: #f8efef;
+  font-size: 150%;
+  text-align: center; }
+
+.dato {
+  text-align: center; }
+
+.btn-neon {
+  position: relative;
+  display: inline-block;
+  padding: 5px, 10px;
+  color: #36f12f;
+  letter-spacing: 3px;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.2s; }
+  .btn-neon:hover {
+    background: chartreuse;
+    box-shadow: 0 0 5px chartreuse, 0 0 1px chartreuse, 0 0 20px chartreuse;
+    transition-delay: 0.2s; }
+  .btn-neon span {
+    position: absolute;
+    display: block; }
+
+#span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, chartreuse); }
+
+.btn-neon:hover #span1 {
+  left: 100%;
+  transition: 1s; }
+
+#span3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, chartreuse); }
+
+.btn-neon:hover #span3 {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s; }
+
+#span2 {
+  top: -100;
+  right: 0%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, chartreuse); }
+
+.btn-neon:hover #span2 {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s; }
+
+#span4 {
+  bottom: -100%;
+  left: 0%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, chartreuse); }
+
+.btn-neon:hover #span4 {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s; }
+
+.videoindex {
+  text-align: center; }
+
+.footerfondo li {
+  color: #ebe8e8;
+  background-color: white;
+  font-size: 150%;
+  list-style-type: none;
+  text-align: center;
+  background-image: url(https://i.pinimg.com/564x/78/06/3d/78063d629b2cc402458e60b6df335004.jpg); }
