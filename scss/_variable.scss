@@ -1,1 +1,51 @@
-$Letras: 'Bebas Neue'
+$Letras: 'Bebas Neue';
+
+/*declaramos nuestro mapa*/
+$x: (
+    i: green,
+    v: violet
+);
+
+/*creamos el bucle para usar los valores del mapa*/
+@each $red, $color in $x {
+.btn--#{$red} {
+    background-color: $color;
+}
+}
+
+
+/*map get*/
+$x: (
+    color: white,
+    centro: center,
+    tFuente:40px,
+    1rem: 1rem
+);
+
+btn-- {
+    background-color: map-get($x, color);
+    text-align: map-get($x, centro);
+    padding: map-get($x, 1rem);
+    font-size: map-get($x, tFuente);
+}
+
+/*extend*/
+
+.btn--{
+@extend .btn-neon;
+background-color: green;
+color: white;
+}
+
+/*mixins*/
+@mixin sizes($width, $height) {
+height: $height;
+width: $width;
+}
+
+.btn--{
+@include sizes(50px, 50px);
+}
+
+
+

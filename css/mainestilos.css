@@ -1,3 +1,28 @@
+/*declaramos nuestro mapa*/
+/*creamos el bucle para usar los valores del mapa*/
+.btn--i {
+  background-color: green; }
+
+.btn--v {
+  background-color: violet; }
+
+/*map get*/
+btn-- {
+  background-color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 40px; }
+
+/*extend*/
+.btn-- {
+  background-color: green;
+  color: white; }
+
+/*mixins*/
+.btn-- {
+  height: 50px;
+  width: 50px; }
+
 h1 {
   color: #fafafa;
   text-align: center; }
@@ -43,7 +68,7 @@ body {
 .dato {
   text-align: center; }
 
-.btn-neon {
+.btn-neon, .btn-- {
   position: relative;
   display: inline-block;
   padding: 5px, 10px;
@@ -54,11 +79,11 @@ body {
   text-align: center;
   overflow: hidden;
   transition: 0.2s; }
-  .btn-neon:hover {
+  .btn-neon:hover, .btn--:hover {
     background: chartreuse;
     box-shadow: 0 0 5px chartreuse, 0 0 1px chartreuse, 0 0 20px chartreuse;
     transition-delay: 0.2s; }
-  .btn-neon span {
+  .btn-neon span, .btn-- span {
     position: absolute;
     display: block; }
 
@@ -69,7 +94,7 @@ body {
   height: 2px;
   background: linear-gradient(90deg, transparent, chartreuse); }
 
-.btn-neon:hover #span1 {
+.btn-neon:hover #span1, .btn--:hover #span1 {
   left: 100%;
   transition: 1s; }
 
@@ -80,7 +105,7 @@ body {
   height: 2px;
   background: linear-gradient(270deg, transparent, chartreuse); }
 
-.btn-neon:hover #span3 {
+.btn-neon:hover #span3, .btn--:hover #span3 {
   right: 100%;
   transition: 1s;
   transition-delay: 0.5s; }
@@ -92,7 +117,7 @@ body {
   height: 100%;
   background: linear-gradient(180deg, transparent, chartreuse); }
 
-.btn-neon:hover #span2 {
+.btn-neon:hover #span2, .btn--:hover #span2 {
   top: 100%;
   transition: 1s;
   transition-delay: 0.25s; }
@@ -104,7 +129,7 @@ body {
   height: 100%;
   background: linear-gradient(360deg, transparent, chartreuse); }
 
-.btn-neon:hover #span4 {
+.btn-neon:hover #span4, .btn--:hover #span4 {
   bottom: 100%;
   transition: 1s;
   transition-delay: 0.75s; }
