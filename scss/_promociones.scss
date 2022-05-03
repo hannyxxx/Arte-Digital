@@ -1,0 +1,87 @@
+.mainpromociones{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "h1 h1 h1" "torna mundi davi" "precio1 precio2 precio3" "btn btn btn" "footer footer footer";
+    
+  }
+
+  .h1promociones{
+    grid-area: h1;
+  }
+  
+  .centro1{
+    grid-area: torna;
+    
+  }
+
+  .centro2{
+    grid-area: mundi;
+  }
+
+  .centro3{
+    grid-area: davi;
+    width: 100%;
+  }
+
+  .precio1{
+    grid-area: precio1;
+    justify-content: center;
+  }
+
+  .btn-neon{
+    grid-area: btn;
+  }
+
+  .footerpromociones{
+    grid-area: footer;
+  width: 100%;
+  li{
+    color: rgb(235, 232, 232);
+    background-color: white;
+    font-size: 150%;
+    list-style-type: none;
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/78/06/3d/78063d629b2cc402458e60b6df335004.jpg);
+}
+  }
+    
+    .precio1{
+        font-weight: bold;
+        font-size: 200%;
+        text-align: center;
+        color: white;
+      }
+
+      .torna{
+          width: 100%;
+         
+      }
+      .centro1{
+          text-align: center;
+      }
+
+      .mundi{
+        width: 100%;
+      }
+      .precio2{
+        font-weight: bold;
+        font-size: 200%;
+        text-align: center;
+        color: white;
+      }
+      .centro2{
+          text-align: center;
+      }
+
+      .centro3{
+          text-align: center;
+      }
+      .davi{
+        width: 100%;
+      }
+      .precio3{
+        font-weight: bold;
+        font-size: 200%;
+        text-align: center;
+        color: white;
+      }

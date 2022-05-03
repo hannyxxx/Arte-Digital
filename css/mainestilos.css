@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*declaramos nuestro mapa*/
 /*creamos el bucle para usar los valores del mapa*/
 .btn--i {
@@ -144,3 +145,262 @@ body {
   list-style-type: none;
   text-align: center;
   background-image: url(https://i.pinimg.com/564x/78/06/3d/78063d629b2cc402458e60b6df335004.jpg); }
+
+.maindiseño {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "h1d h1d h1d" "dise1 dise2 dise3" "dise4 dise5 dise6" ". dise7 ." "btn btn btn"; }
+
+.h1diseño {
+  grid-area: h1d; }
+
+.dise11 {
+  grid-area: dise1;
+  justify-self: center; }
+
+.dise12 {
+  grid-area: dise2; }
+
+.dise13 {
+  grid-area: dise3; }
+
+.dise14 {
+  grid-area: dise4; }
+
+.dise15 {
+  grid-area: dise5; }
+
+.dise16 {
+  grid-area: dise6; }
+
+.dise17 {
+  grid-area: dise7; }
+
+.btn-neon, .btn-- {
+  grid-area: btn; }
+
+.dise1 {
+  width: 100%; }
+
+.dise2 {
+  width: 100%; }
+
+.dise3 {
+  width: 100%; }
+
+.dise4 {
+  width: 100%; }
+
+.dise5 {
+  width: 100%; }
+
+.dise6 {
+  width: 100%; }
+
+.dise7 {
+  width: 100%; }
+
+.diseñoscentro {
+  text-align: center; }
+
+.footerdiseño li {
+  color: #ebe8e8;
+  background-color: white;
+  font-size: 150%;
+  list-style-type: none;
+  text-align: center;
+  background-image: url(https://i.pinimg.com/564x/78/06/3d/78063d629b2cc402458e60b6df335004.jpg); }
+
+.mainpromociones {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "h1 h1 h1" "torna mundi davi" "precio1 precio2 precio3" "btn btn btn" "footer footer footer"; }
+
+.h1promociones {
+  grid-area: h1; }
+
+.centro1 {
+  grid-area: torna; }
+
+.centro2 {
+  grid-area: mundi; }
+
+.centro3 {
+  grid-area: davi;
+  width: 100%; }
+
+.precio1 {
+  grid-area: precio1;
+  justify-content: center; }
+
+.btn-neon, .btn-- {
+  grid-area: btn; }
+
+.footerpromociones {
+  grid-area: footer;
+  width: 100%; }
+  .footerpromociones li {
+    color: #ebe8e8;
+    background-color: white;
+    font-size: 150%;
+    list-style-type: none;
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/78/06/3d/78063d629b2cc402458e60b6df335004.jpg); }
+
+.precio1 {
+  font-weight: bold;
+  font-size: 200%;
+  text-align: center;
+  color: white; }
+
+.torna {
+  width: 100%; }
+
+.centro1 {
+  text-align: center; }
+
+.mundi {
+  width: 100%; }
+
+.precio2 {
+  font-weight: bold;
+  font-size: 200%;
+  text-align: center;
+  color: white; }
+
+.centro2 {
+  text-align: center; }
+
+.centro3 {
+  text-align: center; }
+
+.davi {
+  width: 100%; }
+
+.precio3 {
+  font-weight: bold;
+  font-size: 200%;
+  text-align: center;
+  color: white; }
+
+.maincontacto {
+  display: grid;
+  grid-template-areas: "h1 h1 h1" "info info info"  "h3 h3 h3" "dato dato dato" "mensa mensa mensa" "opcion opcion opcion"  "opcicolo opcicolo opcicolo" "ul ul ul" "btn btn btn" "footer footer footer";
+  grid-template-columns: repeat(3, 1fr); }
+
+.h1contacto {
+  grid-area: h1; }
+
+.infocontacto {
+  grid-area: info; }
+
+.h3oro {
+  grid-area: h3; }
+
+.datodatocontacto {
+  grid-area: dato; }
+
+.mensacontacto {
+  grid-area: mensa;
+  display: flex;
+  justify-content: center; }
+
+.opcioncontacto {
+  grid-area: opcion;
+  display: flex;
+  justify-content: center; }
+
+.opcioncolor {
+  grid-area: opcicolo;
+  display: flex;
+  justify-content: center; }
+
+.datocont {
+  grid-area: ul; }
+
+.btn-neon, .btn-- {
+  grid-area: btn; }
+
+.footercontacto {
+  grid-area: footer; }
+  .footercontacto li {
+    color: #ebe8e8;
+    background-color: white;
+    font-size: 150%;
+    list-style-type: none;
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/78/06/3d/78063d629b2cc402458e60b6df335004.jpg); }
+
+.contactocontacto h3 {
+  font-size: 200%;
+  text-align: center;
+  color: white; }
+
+.contactocontacto p {
+  font-size: 150%;
+  text-align: center;
+  color: white; }
+
+.datocontacto {
+  font-size: 90%;
+  text-align: center;
+  color: white; }
+
+.titulocontacto {
+  font-size: 250%; }
+
+.opcioncolor {
+  color: #f8f1f1; }
+
+.mainsomos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "h1 h1 h1" "p p p" "img img img" "btn btn btn" "footer footer footer"; }
+
+.h1somos {
+  grid-area: h1; }
+
+.psomos {
+  grid-area: p; }
+
+.imgsomos {
+  grid-area: img; }
+
+.btn-neon, .btn-- {
+  grid-area: btn; }
+
+.footersomos {
+  grid-area: footer; }
+  .footersomos li {
+    color: #ebe8e8;
+    background-color: white;
+    font-size: 150%;
+    list-style-type: none;
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/78/06/3d/78063d629b2cc402458e60b6df335004.jpg); }
+
+.fondoiniciosomos {
+  background-color: white;
+  background-image: url(https://i.pinimg.com/564x/b8/94/94/b894940192b8cbdf25a76ee40cb7f763.jpg);
+  background-position: 20%; }
+
+.parrafosomos {
+  color: #f3ebeb;
+  font-size: 250%;
+  text-align: center; }
+
+.titulosomos {
+  font-size: 300%; }
+
+.imagensomos {
+  display: block;
+  margin: auto;
+  text-align: center; }
+
+.h1somos {
+  border: 2px solid #0f0f0f;
+  box-shadow: inset 0 0 5px #0be90b, 0 0 10px #30e030;
+  margin: auto;
+  max-width: 300px;
+  text-align: center;
+  padding: 10px; }

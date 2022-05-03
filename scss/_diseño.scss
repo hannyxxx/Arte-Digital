@@ -1,0 +1,83 @@
+.maindiseño {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "h1d h1d h1d" "dise1 dise2 dise3" "dise4 dise5 dise6" ". dise7 ." "btn btn btn";
+  }
+
+  .h1diseño {
+    grid-area: h1d;
+  }
+
+  .dise11 {
+    grid-area: dise1;
+    justify-self: center;
+  }
+
+  .dise12 {
+    grid-area: dise2;
+  }
+  
+  .dise13 {
+    grid-area: dise3;
+  }
+
+  .dise14 {
+    grid-area: dise4;
+  }
+
+  .dise15 {
+    grid-area: dise5;
+  }
+
+  .dise16 {
+    grid-area: dise6;
+  }
+
+  .dise17 {
+    grid-area: dise7;
+  }
+
+  .btn-neon {
+    grid-area: btn;
+  }
+
+  .dise1{
+    width: 100%;
+  }
+  .dise2{
+    width: 100%;
+    
+  }
+  .dise3{
+    width: 100%;
+    
+  }
+  .dise4{
+    width: 100%;
+    
+  }
+  .dise5{
+    width: 100%;
+    
+  }
+  .dise6{
+    width: 100%;
+    
+  }
+  .dise7{
+    width: 100%;
+    
+  }
+  .diseñoscentro{
+    text-align: center;
+  } 
+  
+  .footerdiseño li{
+   color: rgb(235, 232, 232);
+   background-color: white;
+   font-size: 150%;
+   list-style-type: none;
+   text-align: center;
+   background-image: url(https://i.pinimg.com/564x/78/06/3d/78063d629b2cc402458e60b6df335004.jpg);
+}
+  

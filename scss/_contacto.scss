@@ -1,0 +1,96 @@
+.maincontacto{
+    display: grid;
+    grid-template-areas: "h1 h1 h1"
+                         "info info info" 
+                         "h3 h3 h3"
+                         "dato dato dato"
+                         "mensa mensa mensa"
+                         "opcion opcion opcion" 
+                         "opcicolo opcicolo opcicolo"
+                         "ul ul ul"
+                         "btn btn btn"
+                        "footer footer footer";
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+                
+                
+                    .h1contacto{
+                      grid-area: h1;
+                    }
+                
+                    .infocontacto{
+                      grid-area: info;
+                    }
+                
+                    .h3oro{
+                      grid-area: h3;
+                    }
+                
+                    .datodatocontacto{
+                      grid-area: dato;
+                    }
+                
+                    .mensacontacto{
+                      grid-area: mensa;
+                      display: flex;
+                      justify-content: center;
+                    }
+                
+                    .opcioncontacto{
+                      grid-area: opcion;
+                      display: flex;
+                      justify-content: center;
+                    }
+                
+                    .opcioncolor{
+                      grid-area: opcicolo;
+                      display: flex;
+                      justify-content: center;
+                    }
+                
+                    .datocont{
+                      grid-area: ul;
+                    }
+                
+                    .btn-neon{
+                      grid-area: btn;
+                      
+                      
+                    }
+                
+                    .footercontacto{
+                      grid-area: footer;
+                      
+                    li{
+                        color: rgb(235, 232, 232);
+                        background-color: white;
+                        font-size: 150%;
+                        list-style-type: none;
+                        text-align: center;
+                        background-image: url(https://i.pinimg.com/564x/78/06/3d/78063d629b2cc402458e60b6df335004.jpg);
+                    }
+                    }
+                
+                       .contactocontacto h3{
+                        font-size: 200%;
+                        text-align: center;
+                        color: white;
+                       }
+                      .contactocontacto p{
+                        font-size: 150%;
+                        text-align: center;
+                        color: white;
+                      }
+                      
+                      .datocontacto{
+                        font-size: 90%;
+                        text-align: center;
+                        color: white;
+                      }
+                .titulocontacto{
+                    font-size: 250%;
+                }
+
+                .opcioncolor{
+                    color:rgb(248, 241, 241) ;
+                }
