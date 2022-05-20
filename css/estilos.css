@@ -11,7 +11,8 @@ h1{
   
   
 }
- 
+
+
 
 .nav-item a{
   color: rgb(8, 8, 8);
@@ -189,18 +190,7 @@ transition: 0.2s;
   transition: 1s;
   transition-delay: 0.75s;
 }
-/*
-.volverinicio{
-    text-align: center;
-    list-style-type: none;
-}
 
-.volverinicio li a{
-    text-decoration: none;
-    
-    background: rgb(131,58,180);
-background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-}*/
 
 .videoindex{
     text-align: center;
@@ -286,15 +276,6 @@ text-align: center;
     margin:auto
   }
 
-  /*.volveriniciosomos{
-    text-align: center;
-    list-style-type: none;
-  }
-  .volveriniciosomos li a{
-    
-    background: rgb(131,58,180);
-background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-  }*/
   .imagensomos{
       text-align: center;
   }
@@ -404,24 +385,15 @@ background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
 .titulocontacto{
     font-size: 250%;
 }
-/*
-.volveriniciocontacto{
-    text-align: center;
-    list-style-type: none;
-  }
-  .volveriniciocontacto li a{
-    
-    background: rgb(131,58,180);
-background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-  }*/
+
 
   .opcioncolor{
       color:rgb(248, 241, 241) ;
   }
 
-  /* HTML DISEÑOS*/
+/* HTML DISEÑOS*/
 /*grid mas flex diseño*/
-  .maindiseño {
+ /* .maindiseño {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "h1d h1d h1d" "dise1 dise2 dise3" "dise4 dise5 dise6" ". dise7 ." "btn btn btn";
@@ -459,20 +431,10 @@ background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
   .dise17 {
     grid-area: dise7;
   }
-
+ 
   .btn-neon {
     grid-area: btn;
   }
- /* 
-  .volveriniciodiseño{
-        text-align: center;
-        list-style-type: none;
-      }
-      .volveriniciodiseño li a{
-        
-        background: rgb(131,58,180);
-        background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-      }*/
       
       .dise1{
         width: 100%;
@@ -503,7 +465,7 @@ background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
       }
       .diseñoscentro{
         text-align: center;
-      } 
+      }  */
       
       .footerdiseño li{
        color: rgb(235, 232, 232);
@@ -564,16 +526,6 @@ background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
         text-align: center;
         background-image: url(https://i.pinimg.com/564x/78/06/3d/78063d629b2cc402458e60b6df335004.jpg);}
         
-        /*
-        .volveriniciopromo{
-            text-align: center;
-            list-style-type: none;
-          }
-          .volveriniciopromo li a{
-            
-            background: rgb(131,58,180);
-        background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-          }*/
 
           .precio1{
             font-weight: bold;

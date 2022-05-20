@@ -61,6 +61,35 @@ body {
   font-size: 250%;
   text-align: center; }
 
+.cards-wrapper {
+  display: flex; }
+
+.card {
+  margin: 1em auto;
+  width: cal(100%/3); }
+
+.image-wrapper {
+  height: 22vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex; }
+
+.image-wrapper {
+  max-width: 100%;
+  height: 100%; }
+
+.card-title {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #1ac929; }
+
+.card-text {
+  text-align: center;
+  align-items: center;
+  justify-content: center; }
+
 .tipos1 li {
   color: #f8efef;
   font-size: 150%;
@@ -146,60 +175,84 @@ body {
   text-align: center;
   background-image: url(https://i.pinimg.com/564x/78/06/3d/78063d629b2cc402458e60b6df335004.jpg); }
 
-.maindiseño {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "h1d h1d h1d" "dise1 dise2 dise3" "dise4 dise5 dise6" ". dise7 ." "btn btn btn"; }
+.imagen-wrapper {
+  display: flex; }
 
-.h1diseño {
-  grid-area: h1d; }
+.diseño1-0 {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start; }
 
-.dise11 {
-  grid-area: dise1;
-  justify-self: center; }
+/* .maindiseño {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "h1d h1d h1d" "dise1 dise2 dise3" "dise4 dise5 dise6" ". dise7 ." "btn btn btn";
+  }
 
-.dise12 {
-  grid-area: dise2; }
+  .h1diseño {
+    grid-area: h1d;
+  }
 
-.dise13 {
-  grid-area: dise3; }
+  .dise11 {
+    grid-area: dise1;
+    justify-self: center;
+  }
 
-.dise14 {
-  grid-area: dise4; }
+  .dise12 {
+    grid-area: dise2;
+  }
+  
+  .dise13 {
+    grid-area: dise3;
+  }
 
-.dise15 {
-  grid-area: dise5; }
+  .dise14 {
+    grid-area: dise4;
+  }
 
-.dise16 {
-  grid-area: dise6; }
+  .dise15 {
+    grid-area: dise5;
+  }
 
-.dise17 {
-  grid-area: dise7; }
+  .dise16 {
+    grid-area: dise6;
+  }
 
-.btn-neon, .btn-- {
-  grid-area: btn; }
+  .dise17 {
+    grid-area: dise7;
+  }
 
-.dise1 {
-  width: 100%; }
+  .btn-neon {
+    grid-area: btn;
+  }
 
-.dise2 {
-  width: 100%; }
-
-.dise3 {
-  width: 100%; }
-
-.dise4 {
-  width: 100%; }
-
-.dise5 {
-  width: 100%; }
-
-.dise6 {
-  width: 100%; }
-
-.dise7 {
-  width: 100%; }
-
+  .dise1{
+    width: 100%;
+  }
+  .dise2{
+    width: 100%;
+    
+  }
+  .dise3{
+    width: 100%;
+    
+  }
+  .dise4{
+    width: 100%;
+    
+  }
+  .dise5{
+    width: 100%;
+    
+  }
+  .dise6{
+    width: 100%;
+    
+  }
+  .dise7{
+    width: 100%;
+    
+  } */
 .diseñoscentro {
   text-align: center; }
 
@@ -282,6 +335,23 @@ body {
   font-size: 200%;
   text-align: center;
   color: white; }
+
+.btn1 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #36f12f;
+  font-size: 15px;
+  overflow: hidden;
+  transition: 0.2s; }
+  .btn1:hover {
+    background: chartreuse;
+    box-shadow: 0 0 5px chartreuse, 0 0 1px chartreuse, 0 0 5px chartreuse;
+    transition-delay: 0.2s; }
+
+image-wrapper {
+  display: flex; }
 
 .maincontacto {
   display: grid;
